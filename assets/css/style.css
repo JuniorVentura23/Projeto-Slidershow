@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,800;9..144,900&family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@500;600;700&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+:root {
+    --color-dark50:#3D4145;
+    --color-dark70:#21272e;
+    --color-dark90:#151A1F;
+
+    --color-light1:#ff6a00;
+    --fontone: 'Poppins', sans-serif;
+    --fonttwo: 'Fraunces', serif;
+    --fontthree:'Barlow', sans-serif;
+}
+html {
+    font-size:62.5%;
+}
+body {
+    background-color: var(--color-dark70)
+}
+/* início header */
+header {
+    width:100%;
+    background-color: var(--color-dark90);    
+    padding:20px 13%;
+    position: fixed;
+    
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width:1440px;
+}
+ul .ul-bars {
+    display: flex;    
+    list-style: none;
+    gap: 2rem;
+    position: absolute;
+    right: 180px;
+       
+}
+ul .ul-bars li {
+    position:absolute;
+    right:200px;
+    top:22px;
+    padding:10px;
+    
+}
+
+ul .ul-bars li a{
+    font-size: 1.6rem;
+    text-transform: uppercase; 
+    position:absolute;
+    
+     
+}
+
+.ul-bars li a:hover{
+    color:var(--color-light1); 
+       
+}
+.bar-icon {
+    color:#fff;
+    font-size: 2rem;
+    display: none;;
+}
+nav .nav-bar {
+    position: relative;
+}
+nav .nav-bar li {
+    position: absolute;
+    right:180px;
+}
+.nav-bar a {
+    font-family: var(--fontthree);
+    color:#fff;
+    font-size:2.3rem;
+    text-decoration:none;    
+}
+
+.nav-bar span {
+    color:var(--color-light1);
+}
+.on i {    
+    color:var(--color-light1);
+    font-size: 2.3rem;
+}
+/* fim header */
