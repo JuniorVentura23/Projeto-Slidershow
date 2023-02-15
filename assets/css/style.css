@@ -23,42 +23,41 @@ body {
 }
 /* início header */
 header {
+    position: fixed;
+    top:0;
+    left:0;
     width:100%;
     background-color: var(--color-dark90);    
     padding:20px 13%;
-    position: fixed;
+    z-index:1000;
+    
     
 }
 nav {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width:1440px;
 }
-ul .ul-bars {
+.ul-bars {
     display: flex;    
     list-style: none;
     gap: 2rem;
     position: absolute;
-    right: 180px;
+    right:50px
+    
        
 }
 ul .ul-bars li {
-    position:absolute;
-    right:200px;
-    top:22px;
-    padding:10px;
-    
+    position:relative;    
+    padding:10px;    
 }
 
-ul .ul-bars li a{
+.ul-bars li a{
     font-size: 1.6rem;
-    text-transform: uppercase; 
-    position:absolute;
-    
-     
+    text-transform: uppercase;      
 }
-
 .ul-bars li a:hover{
     color:var(--color-light1); 
        
@@ -88,5 +87,87 @@ nav .nav-bar li {
 .on i {    
     color:var(--color-light1);
     font-size: 2.3rem;
+    position: absolute;
+    top:5px
 }
 /* fim header */
+
+/* início banner */
+.banner {
+    position:relative;
+    width:100%;
+    min-height:100vh;
+}
+.imgbx {    
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+.imgbx img {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:0;
+    transition: 0.5s;
+    background-position: center;
+    /* background-size: cover; */
+}
+.imgbx img.ativo {
+    opacity:1;
+}
+.controle {
+    position:absolute;
+    top:50%;
+    right:0;
+    width:80px;
+    height:auto;
+      
+}
+.controle li  {    
+     
+    background-color: #ff6a00;
+    position:relative;
+    width:80px;
+    height:80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+    border-radius:  
+}
+.controle li:hover {
+    background-color: var(--color-dark50);
+    
+}
+.controle li:before {
+    content: '';
+    position:absolute;
+    width:20px;
+    height:20px;
+    border-left:3px solid #111;
+    border-bottom:3px solid #111;
+    transform:rotate(45deg);
+}
+.controle li:nth-child(2):before {
+    transform:rotate(-135deg);
+}
+
+ /*.controle  i {
+    position: absolute;
+    top:50%;
+    right: 0;
+    font-size:18px;
+    color:#fff;
+     */
+    
+    
+    
+}
+
+
+/* final banner */
