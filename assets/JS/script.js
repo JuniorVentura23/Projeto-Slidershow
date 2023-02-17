@@ -1,3 +1,12 @@
+// sessão on/of
+let onOff = document.querySelector('.on i');
+onOff.addEventListener('click', ()=> {
+    onOff.classList.toggle('fa-toggle-on');
+    document.body.classList.toggle('light');
+});
+
+
+// sessão banner
 const imgbx = document.querySelector('.imgbx');
 const slides = imgbx.querySelectorAll('img');
 var i = 0;
@@ -17,5 +26,27 @@ function prevSlide() {
     slides[i].classList.add('ativo');
 }
 
-setInterval (nextSlide, 5000);
+
+
+const contentBx = document.querySelector('.contentBx');
+const slidesText = contentBx.querySelectorAll('div');
+var j = 0;
+
+
+function nextSlideText() {
+    slidesText[j].classList.remove('ativo');
+    j = (j + 1) % slidesText.length;
+    slidesText[j].classList.add('ativo');
+
+
+}
+
+function prevSlideText() {
+    slidesText[j].classList.remove('ativo');
+    j = (j - 1 + slidesText.length) % slidesText.length;
+    slidesText[j].classList.add('ativo');
+}
+
+setInterval (nextSlide, 6000);
+setInterval( nextSlideText, 6000);
 
