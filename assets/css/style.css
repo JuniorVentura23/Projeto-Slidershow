@@ -288,6 +288,9 @@ section {
     width:70%;
     cursor:pointer;
 }
+.bxText {
+    text-align: left;
+}
 .bxText h2 {
     font-family: var(--fontone);
     color:var(--text-color);
@@ -359,7 +362,7 @@ section {
 }
 .content-modelo .bx:hover  {
     transform:translateY(-10px);
-    border:4px solid var(--text-color)
+    border:4px solid var(--ban-color-conttext);
 }
 .content-modelo .bxImG {
     width:180px;
@@ -393,17 +396,44 @@ section {
 }
 .modelo .btn {
     display: inline-block;
-    margin-top:30px;
+    margin-top:30px;    
+}
+/* Final modelo */
+
+/* Início marcas */
+
+.marcas {
+    background: #fe8c00; 
+    background: -webkit-linear-gradient(to right, #f83600, #fe8c00);
+    background: linear-gradient(to right, #f83600, #fe8c00);
+      
+      
     
 }
-.verso {
-    background-color: chartreuse;    
+.content-marcas {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(190px, auto));
+    gap:3rem; 
+    padding-bottom:25px;   
+}  
+
+.marcas .bx {
+    width:140px;
+    height:80px;
+    background-color:transparent;
+    display: flex;
+    justify-content: center;
+    /* margin-bottom:30px; */
+
 }
-.verso h3 {
-    color:var(--text-color);
-    font-size:3rem;
+
+.marcas .bx img {
+    width:100%;
+    height:100%;
+    filter:grayscale(1);    
+}
+.marcas .bx img:hover {
+    filter:grayscale(0);
 }
 
-
-
-/* Final modelo */
+/* Final marcas */
