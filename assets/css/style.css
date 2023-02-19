@@ -359,6 +359,7 @@ section {
     background-color: rgba(255, 137, 3, 0.2);
     transition: all ease 0.50s;
     box-shadow:4px 3px 3px rgba(0,0,0, 0.2);
+    cursor: pointer;
 }
 .content-modelo .bx:hover  {
     transform:translateY(-10px);
@@ -414,7 +415,8 @@ section {
     display: grid;
     grid-template-columns:repeat(auto-fit, minmax(190px, auto));
     gap:3rem; 
-    padding-bottom:25px;   
+    padding-bottom:25px;  
+    justify-content: center; 
 }  
 
 .marcas .bx {
@@ -437,3 +439,90 @@ section {
 }
 
 /* Final marcas */
+
+/* Início brindes */
+.brind .content {
+    position: relative;
+    display: flex;
+    justify-content: center;    
+}
+.box-form {
+    display:grid;
+    grid-template-columns:300px 3fr;
+    position: absolute;
+    right:27%; 
+}
+.box-form .content-img {
+    width:400px;
+    height:auto;    
+}
+.box-form img {
+    width:100%;
+    height:100%;
+    
+    background-size: cover;     
+}
+.content-form {
+    width:400px;
+    height:auto;
+    padding:20px 30px;
+    background-color: rgba(255, 137, 3, 0.6);
+    display: flex;
+    justify-content: left;
+    
+}
+.content-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    gap:1.5rem; 
+    width:100%; 
+    height:auto;
+}
+.name, .emaill, .celular, .models, .mark {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    text-align: left;
+    gap:0.3rem;     
+}
+input,select {
+    outline:none;
+    border-radius:5px;
+    border:none;
+    height:30px;
+    padding:0 8px;
+}
+label {
+    font-family:var(--fontone);
+    font-size:2rem;
+    color:#000;
+}
+.mark-cont {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.mark-cont label {
+    font-size:1.6rem;
+}
+input, select, ::placeholder, textarea{
+    font-size: 1.5rem;
+    color:var(--text-color2);
+    outline:none;
+    border:none;
+}
+input[type=radio] {
+    margin:0 10px;
+    width:15px;    
+}
+textarea {
+    width:340px;
+    height:150px;
+    border-radius:5px;
+    padding:6px 8px;
+    resize:none;
+}
+
+
+/* Final brindes */
