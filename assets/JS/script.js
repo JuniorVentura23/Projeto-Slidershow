@@ -1,3 +1,17 @@
+//Sessão menu
+let hamb = document.querySelector('.bar-icon i');
+let navBar = document.querySelector('.ul-bars');
+
+hamb.addEventListener('click', ()=> {
+    hamb.classList.toggle('fa-times');
+    navBar.classList.toggle('active');
+    window.onscroll = () => {
+        hamb.classList.remove('fa-times');
+        navBar.classList.remove('active');
+    }
+} );
+
+
 // sessão on/of
 let onOff = document.querySelector('.on i');
 onOff.addEventListener('click', ()=> {
