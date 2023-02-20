@@ -6,6 +6,7 @@
     box-sizing:border-box;
     overflowX:hidden;
     text-decoration:none;
+    list-style: none;
 }
 :root {
          
@@ -441,16 +442,20 @@ section {
 /* Final marcas */
 
 /* Início brindes */
-.brind .content {
-    position: relative;
+.brind {    
     display: flex;
-    justify-content: center;    
+    justify-content: center; 
+    align-items: center;   
+}
+.brind .content {
+    display: flex;
+    justify-content: center;
 }
 .box-form {
     display:grid;
     grid-template-columns:300px 3fr;
-    position: absolute;
-    right:27%; 
+    justify-content: center;
+    margin-left: 190px;     
 }
 .box-form .content-img {
     width:400px;
@@ -458,8 +463,7 @@ section {
 }
 .box-form img {
     width:100%;
-    height:100%;
-    
+    height:100%;    
     background-size: cover;     
 }
 .content-form {
@@ -526,3 +530,73 @@ textarea {
 
 
 /* Final brindes */
+
+/* Início footer */
+footer {
+    background: #fe8c00; 
+    background: -webkit-linear-gradient(to right, #f83600, #fe8c00);
+    background: linear-gradient(to right, #f83600, #fe8c00);
+    width:100%;   
+    padding:50px 13%; 
+    display: flex;
+    justify-content: center;
+    border-radius:250px 0 0 0;
+}
+.box-rodape {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    text-align: center;
+    gap:2.5rem;
+}
+.bx-redes {
+    width:100%;
+    
+}
+.bx-redes i {
+    font-size: 2rem;
+    color:var(--text-color);
+    margin:10px;
+    background-color: var(--bh-color);
+    padding:10px;
+    width:40px;
+    height:40px;
+    border-radius:25px;
+    transition: all 0.5s;
+    text-shadow: 2px 4px 3px rgba(0,0,0, 0.2);   
+}
+.bx-redes i:hover {
+    transform: rotateY(180deg);
+    color:var(--color-light1);    
+}
+.bx-menu {
+    display: flex;
+    justify-content: center;
+}
+.fot-bars {
+    display: flex;    
+    gap: 2.8rem;
+}
+.fot-bars a {
+    color:var(--bh-color);
+    font-size: 1.6rem;
+    font-family: var(--fontone);
+    font-weight:600;
+    transition: all 0.5s ease;
+}
+.fot-bars a:hover {
+    color:var(--text-color);
+    translate: linear 0.6s ease;
+}
+.bx-copright p {
+    font-size: 1.8rem;
+    margin-top:60px;    
+}
+.bx-copright a {
+    color:#fff;
+}
+.bx-copright a:hover {
+    text-decoration: underline;
+}
+
+/* Final footer */
